@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan HTML - Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+        td {
+            border: 1px solid #000;
+            padding: 15px 5px;
+            height: 30px;
+        }
+        /* Definisi Warna Sesuai Catatan */
+        .hijau-muda  { background-color: #b4fac8; }
+        .hijau-tua   { background-color: #00af4f; }
+        .biru        { background-color: #14c8fa; }
+        .oranye      { background-color: #e1640a; }
+        .merah       { background-color: #fa3c3c; }
+        .kuning      { background-color: #ffff00; }
+    </style>
+</head>
+<body>
+
+    <table>
+        <!-- Baris 1 -->
+        <tr>
+            <td colspan="2" class="hijau-muda">1</td>
+            <td colspan="3" class="hijau-muda">2</td>
+        </tr>
+
+        <!-- Baris 2 -->
+        <tr>
+            <td rowspan="2" class="kuning">3</td>
+            <td colspan="2" rowspan="2" class="biru">4</td>
+            <td class="oranye">5</td>
+            <td rowspan="3" class="kuning">6</td>
+        </tr>
+
+        <!-- Baris 3 -->
+        <tr>
+            <td class="oranye">7</td>
+        </tr>
+
+        <!-- Baris 4 -->
+        <tr>
+            <td class="kuning">8</td>
+            <td colspan="2" rowspan="3" class="merah">9</td>
+            <td class="oranye">10</td>
+        </tr>
+
+        <!-- Baris 5 -->
+        <tr>
+            <td class="kuning">11</td>
+            <td colspan="2" rowspan="2" class="hijau-tua">12</td>
+        </tr>
+
+        <!-- Baris 6 -->
+        <tr>
+            <td class="kuning">13</td>
+        </tr>
+
+        <!-- Baris 7 -->
+        <tr>
+            <td colspan="3" class="oranye">14</td>
+            <td class="hijau-muda">15</td>
+            <td class="biru">16</td>
+        </tr>
+
+        <!-- Baris 8 -->
+        <tr>
+            <td colspan="2" rowspan="2" class="biru">18</td>
+            <td class="hijau-tua">19</td>
+            <td rowspan="2" class="merah">20</td>
+            <td class="biru">17</td>
+        </tr>
+
+        <!-- Baris 9 -->
+        <tr>
+            <td class="hijau-tua">22</td>
+            <td class="kuning">21</td>
+        </tr>
+    </table>
+
+</body>
+</html>
